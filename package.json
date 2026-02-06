@@ -1,0 +1,57 @@
+{
+  "name": "autonomous-evolution-core",
+  "version": "1.0.0",
+  "description": "Turns any AI agent into a self-evolving, self-repairing, 24/7 autonomous partner",
+  "main": "evolution-engine.js",
+  "bin": {
+    "evolution": "./cli.js"
+  },
+  "scripts": {
+    "start": "node evolution-engine.js",
+    "test": "node test-evolution.js",
+    "diagnose": "node modules/self-diagnosis.js",
+    "monitor": "node modules/24-7-monitor.js"
+  },
+  "keywords": [
+    "autonomous",
+    "self-evolving",
+    "ai",
+    "agent",
+    "self-repair",
+    "openclaw",
+    "skill",
+    "evolution",
+    "learning",
+    "24-7"
+  ],
+  "author": "AdmuadClaw",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.6.0",
+    "boxen": "^7.1.1",
+    "chalk": "^4.1.2",
+    "commander": "^11.1.0",
+    "fs-extra": "^11.3.3",
+    "inquirer": "^8.2.6",
+    "node-fetch": "^2.6.9",
+    "ora": "^7.0.1"
+  },
+  "openclaw": {
+    "skillId": "autonomous-evolution-core",
+    "category": "agent-enhancement",
+    "commands": [
+      "evolution enable",
+      "evolution status",
+      "evolution diagnose",
+      "evolution monitor --enable",
+      "evolution learn --from <session>",
+      "evolution optimize --tool <toolname>"
+    ],
+    "compatibility": "openclaw>=1.0.0",
+    "requiresPermissions": [
+      "exec",
+      "read",
+      "write"
+    ]
+  }
+}
