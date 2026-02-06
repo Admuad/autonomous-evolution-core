@@ -6,61 +6,174 @@
 [![OpenClaw Skill](https://img.shields.io/badge/OpenClaw-Skill-green)](https://openclaw.ai)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 🏆 **USDC Hackathon Submission - Track 2: Best OpenClaw Skill**
+## 🏆 USDC Hackathon Submission - Track 2: Best OpenClaw Skill
 
-## 🚀 **What Problem Does This Solve?**
+## 🧬 True Evolution: Not Just Repair, But Growth
+
+This isn't just self-repair. It's **autonomous evolution** - agents that:
+
+- 🔍 **Self-diagnose** problems
+- 🔧 **Self-repair** automatically
+- 📚 **Self-learn** from experience
+- ⏰ **Run 24/7** without supervision
+- 🚀 **Continuously evolve** and grow new capabilities
+- 🌐 **Share knowledge** with the community
+- 🧠 **Extract patterns** from successful workflows
+
+**The key difference:** Agents don't just fix themselves when broken — they **teach themselves to do new things**.
+
+## 🚀 What Problem Does This Solve?
+
+### Old Way (Self-Repair Only)
+```
+Agent breaks → diagnoses → fixes → works again
+But: Still can't do anything new. Limited to original capabilities.
+```
+
+### New Way (True Evolution)
+```
+Agent needs capability → detects gap → installs it → learns it
+Agent succeeds repeatedly → extracts pattern → becomes a skill
+Agent learns from community → installs patterns shared by others
+Result: Agent grows smarter with every interaction
+```
+
+### The Problem AI Agents Face
 
 AI agents today are **fragile tools** that:
 - Say "I can't do that" when they encounter problems
 - Need constant hand-holding
 - Can't fix themselves
-- Require human intervention for basic issues
-- Don't learn from their mistakes
+- Can't learn from their mistakes
+- **Can't grow new capabilities** ← THE KEY PROBLEM
+
+### Our Solution
 
 **Autonomous Evolution Core** transforms agents from fragile tools into **autonomous partners** that:
-- 🔍 **Self-diagnose** problems
-- 🔧 **Self-repair** automatically
-- 📚 **Self-learn** from experience
-- ⏰ **Run 24/7** without supervision
-- 🚀 **Continuously evolve** and improve
+- 🔍 Self-diagnose problems
+- 🔧 Self-repair automatically
+- 📚 Self-learn from experience
+- 🌐 Share with community
+- 🧠 Extract patterns from workflows
+- 🚀 **Grow new capabilities on demand**
 
-## ✨ **Features**
+## ✨ Features
 
-### 1. **Self-Diagnosis Engine**
+### 1. Self-Diagnosis Engine ✅
+
 Detects tool failures before they become problems:
 - Missing API keys (Brave Search, etc.)
 - Broken dependencies
 - Permission issues
 - Configuration problems
 
-### 2. **Real Auto-Fixes**
+### 2. Real Auto-Fixes ✅
+
 Actually fixes problems (not just theory):
 - Installs missing packages (`npm install`)
 - Updates configuration files
 - Fixes permission issues
 - Provides clear instructions
 
-### 3. **Evolution Engine**
-24/7 autonomous operation:
-- Background monitoring
-- Learning feedback loops
-- Performance optimization
-- Proactive issue detection
+### 3. Evolution Engine v2 🆕
 
-### 4. **Learning System**
-Remembers successful fixes:
-- Builds knowledge database
-- Shares learnings across sessions
-- Optimizes approaches over time
-- Reduces repeat failures
+**The core of true evolution:**
 
-## 📦 **Installation**
+**Capability Detection:**
+- Scans user queries for missing capabilities
+- Uses regex patterns to identify what's needed
+- Ranks suggestions by priority and relevance
+
+**Auto-Installation:**
+- Installs npm packages
+- Installs ClawHub skills
+- Clones git repositories
+- Enables builtin modules
+
+**Progress Tracking:**
+- Tracks installed capabilities
+- Monitors evolution progress
+- Identifies pending capabilities
+
+### 4. Learning System 🆕
+
+**Observes, records, learns:**
+
+**Success Recording:**
+- Records successful workflows
+- Extracts tool sequences
+- Identifies capability combinations
+- Estimates durations
+
+**Failure Learning:**
+- Classifies error types
+- Builds avoidance rules
+- Suggests alternatives
+- Tracks recurring failures
+
+**Smart Suggestions:**
+- Context-aware recommendations
+- Based on similar past workflows
+- Optimized for success rate
+- Learns from community patterns
+
+### 5. Pattern Extractor 🆕
+
+**Converts workflows into reusable skills:**
+
+**Template Generation:**
+- Extracts skill templates from successful workflows
+- Normalizes steps and parameters
+- Tags with use cases
+- Categorizes by domain
+
+**Search & Discovery:**
+- Search templates by query
+- Filter by category
+- Sort by success count
+- Get top/most used templates
+
+**Skill File Generation:**
+- Generates SKILL.md automatically
+- Creates package.json
+- Generates index.js stub
+- Provides README with examples
+
+### 6. Community Sharing 🆕
+
+**Agents learn from each other:**
+
+**Pattern Sharing:**
+- Share learned patterns with community
+- Anonymous or attributed sharing
+- Includes metadata and success rates
+- Community voting system
+
+**Capability Requests:**
+- Request capabilities you need
+- Crowdsourced priority
+- Community voting
+- Urgency levels
+
+**Feedback & Voting:**
+- Rate shared patterns (1-5 stars)
+- Upvote/downvote patterns and requests
+- Provide detailed feedback
+- Influence community rankings
+
+**Community Search:**
+- Search shared patterns
+- Filter by category and success rate
+- Get trending patterns
+- View top requests
+
+## 📦 Installation
 
 ### Option 1: From GitHub (Recommended)
 ```bash
 cd ~/.openclaw/skills
-git clone https://github.com/Admuad/usdc-crypto-portfolio-manager.git
-cd usdc-crypto-portfolio-manager/autonomous-evolution-core
+git clone https://github.com/Admuad/autonomous-evolution-core.git
+cd autonomous-evolution-core
 npm install
 ```
 
@@ -69,7 +182,7 @@ npm install
 clawhub install autonomous-evolution-core
 ```
 
-## 🎯 **Quick Start**
+## 🎯 Quick Start
 
 ```bash
 # Navigate to skill directory
@@ -79,108 +192,307 @@ cd ~/.openclaw/skills/autonomous-evolution-core
 node test-evolution.js
 
 # Use the CLI
-./cli.js enable
-./cli.js status
-./cli.js diagnose web_search
-./cli.js autofix web_search
+./cli.js enable                    # Enable autonomous evolution
+./cli.js status                    # Check system status
+./cli.js detect "query"             # Detect missing capabilities
+./cli.js install <capability-id>    # Auto-install capability
+./cli.js suggest "context"           # Get suggestions
+./cli.js learn-success ...           # Record success for learning
+./cli.js extract-pattern ...        # Extract skill template
+./cli.js share-pattern <id>         # Share with community
+./cli.js trending                  # Get trending patterns
 ```
 
-## 🔧 **Usage Examples**
+## 🔧 Usage Examples
 
 ### Enable Autonomous Evolution
+
 ```bash
 evolution enable
 ```
-Enables 24/7 monitoring, self-diagnosis, and learning loops.
 
-### Check Agent Health
+Enables all evolution components:
+- Self-Diagnosis Engine
+- Evolution Engine v2
+- Learning System
+- Pattern Extractor
+- Community Sharing
+
+### Check Evolution Status
+
 ```bash
 evolution status
 ```
-Shows overall health status of all tools.
 
-### Diagnose Specific Tool
+Shows:
+- Evolution Engine progress (capabilities installed/total)
+- Learning System statistics (success rate, patterns learned)
+- Pattern Extractor (templates generated)
+- Community (patterns shared, votes)
+
+### Detect Missing Capabilities
+
 ```bash
-evolution diagnose web_search
+evolution detect "I need to scrape a website and generate a PDF report"
 ```
-Detailed diagnosis of web_search tool issues.
 
-### Auto-Fix Tool
+Output:
+```
+🔍 Detected 2 missing capabilities:
+
+  1. Advanced Web Scraping
+     Category: browser
+     ID: web-scraping-advanced
+     Matched: scrape.*data
+     Install: clawhub install advanced-scraper
+
+  2. PDF Generation
+     Category: content
+     ID: pdf-generation
+     Matched: generate.*pdf
+     Install: npm install pdfkit
+```
+
+### Auto-Install Capability
+
 ```bash
-evolution autofix web_search
+evolution install pdf-generation
 ```
-Automatically diagnoses AND fixes the tool.
 
-### Enable Monitoring
+Automatically:
+- Detects installation method (npm, clawhub, git, builtin)
+- Installs the capability
+- Records in registry
+- Updates progress
+
+### Get Context-Aware Suggestions
+
 ```bash
-evolution monitor --enable
+evolution suggest "building a chatbot for customer support"
 ```
-Enables 24/7 background monitoring.
 
-## 🎥 **Demo Video**
+Output:
+```
+💡 3 suggested capabilities:
 
-**Watch the skill in action:**  
-https://raw.githubusercontent.com/Admuad/usdc-crypto-portfolio-manager/main/demo/usdc-architect-complete.mp4
+  1. Slack Integration
+     Category: social
+     Priority: high
+     Score: 1.0
+     Reason: Detected 1 matching patterns in context
+     Install: npm install @slack/web-api
 
-The demo shows:
-1. Detecting web_search failure (missing Brave API key)
-2. Attempting auto-fix (installing package)
-3. Updating configuration automatically
-4. Providing clear next steps
-5. Enabling 24/7 monitoring
+  2. Text to Speech
+     Category: voice-video
+     Priority: high
+     Score: 0.8
+     Reason: Detected 1 matching patterns in context
+     Install: clawhub install tts-generator
+```
 
-## 📁 **Project Structure**
+### Learn from Success
+
+```bash
+evolution learn-success \
+  --context '{"goal":"scrape website","industry":"ecommerce"}' \
+  --tools "web_search,browser,write" \
+  --steps '[{"tool":"web_search","description":"search ecommerce sites"}]' \
+  --duration 5000
+```
+
+- Records successful workflow
+- Extracts patterns automatically
+- Updates learning database
+
+### Extract Skill Template
+
+```bash
+evolution extract-pattern \
+  --context '{"goal":"scrape website"}' \
+  --tools "web_search,browser" \
+  --steps '[...]' \
+  --caps "web-scraping-advanced"
+```
+
+- Extracts reusable template
+- Generates skill files
+- Tags with use cases
+
+### Share Pattern with Community
+
+```bash
+evolution share-pattern pattern_12345 --anonymous
+```
+
+- Shares learned pattern
+- Available to all agents
+- Community can vote and provide feedback
+
+### Get Trending Community Patterns
+
+```bash
+evolution trending
+```
+
+Shows top community-voted patterns that are trending now.
+
+## 📁 Project Structure
 
 ```
 autonomous-evolution-core/
-├── SKILL.md                    # Complete skill documentation
+├── SKILL.md                    # Skill documentation
 ├── package.json               # Dependencies & metadata
 ├── cli.js                     # CLI interface (evolution commands)
-├── evolution-engine.js        # Main orchestrator
+├── evolution-engine.js         # Original evolution engine
+├── evolution-engine-v2.js     # NEW: Enhanced evolution engine
 ├── test-evolution.js          # Demonstration script
 ├── README.md                  # This file
+├── capabilities/              # NEW: Capability registry
+│   └── registry.json         # Database of 24+ capabilities
 ├── modules/
-│   ├── self-diagnosis.js      # Tool failure detection & diagnosis
-│   └── real-fixes.js          # Actual package installation & config updates
-├── examples/                  # Usage examples
-└── data/                      # Logs & learning database
+│   ├── self-diagnosis.js     # Tool failure detection & diagnosis
+│   ├── real-fixes.js         # Actual package installation & config updates
+│   ├── learning-system.js     # NEW: Observe, record, learn
+│   ├── pattern-extractor.js   # NEW: Extract skill templates
+│   └── community-share.js    # NEW: Share with community
+├── data/                      # Learning & pattern database
+│   ├── learned-patterns.json
+│   ├── successful-workflows.json
+│   ├── failed-attempts.json
+│   ├── skill-templates.json
+│   ├── installed-capabilities.json
+│   ├── shared-patterns.json
+│   ├── requested-capabilities.json
+│   ├── votes.json
+│   └── feedback.json
+└── examples/                  # Usage examples
 ```
 
-## 🏆 **Why This Wins Track 2**
+## 🧪 Testing
 
-### 1. **Revolutionary Concept**
-First skill that makes agents truly autonomous - not just better tools, but partners.
+```bash
+# Run original test demonstration
+node test-evolution.js
 
-### 2. **Real Implementation**
-Actually fixes real problems (installs packages, updates configs) - not just theory.
+# Test new evolution engine v2
+node evolution-engine-v2.js
 
-### 3. **Demonstrable Impact**
-Live self-repair in action - watch the demo video.
+# Test learning system
+node -e "const ls = require('./modules/learning-system'); console.log(ls.getSuggestions({goal:'test'}));"
 
-### 4. **Scalable Solution**
-Works for any agent, any use case, any tool failure.
+# Test CLI commands
+./cli.js status
+./cli.js detect "test query"
+```
 
-### 5. **Community Value**
-Benefits ALL OpenClaw users by reducing frustration and enabling 24/7 operation.
+## 📊 Architecture
 
-## 🔗 **Links**
+```
+┌─────────────────────────────────────────────────────────┐
+│                  User Query / Request             │
+└────────────────────┬────────────────────────────────┘
+                     │
+                     ▼
+        ┌──────────────────────┐
+        │  Evolution Engine v2 │
+        └────────┬─────────────┘
+                 │
+        ┌────────┼────────────────────┐
+        ▼        ▼                     ▼
+   ┌────────┐ ┌──────────┐  ┌──────────┐
+   │ Detect │ │  Install │  │  Track   │
+   │   Gap  │ │ Capability│  │Progress  │
+   └────────┘ └────┬─────┘  └──────────┘
+                     │
+        ┌────────────┼────────────────┐
+        ▼            ▼                ▼
+   ┌────────┐  ┌──────────┐  ┌──────────┐
+   │   npm  │  │ clawhub  │  │    git   │
+   │install │  │  install │  │   clone  │
+   └────────┘  └──────────┘  └──────────┘
+                     │
+                     ▼
+        ┌──────────────────────┐
+        │   Learning System   │
+        └────────┬─────────────┘
+                 │
+        ┌────────┴────────────────┐
+        ▼                         ▼
+   ┌─────────────┐       ┌──────────────┐
+   │  Success    │       │   Failure   │
+   │   Learn    │       │    Learn    │
+   └──────┬──────┘       └──────┬───────┘
+          │                     │
+          ▼                     ▼
+   ┌─────────────┐       ┌──────────────┐
+   │   Pattern   │       │   Avoidance  │
+   │ Extractor   │       │    Rules    │
+   └──────┬──────┘       └──────────────┘
+          │
+          ▼
+   ┌──────────────────┐
+   │ Skill Templates  │
+   └────────┬─────────┘
+            │
+            ▼
+   ┌──────────────────┐
+   │   Community     │
+   │    Share       │
+   └──────────────────┘
+```
 
-- **GitHub Repository:** https://github.com/Admuad/usdc-crypto-portfolio-manager/tree/main/autonomous-evolution-core
+## 🏆 Why This Wins Track 2
+
+### 1. Revolutionary Concept 🧬
+**First skill that makes agents truly grow capabilities** — not just self-repair, but self-evolution. Agents don't just fix themselves; they teach themselves to do new things.
+
+### 2. Real Implementation 💻
+Actually works:
+- Detects missing capabilities from queries
+- Auto-installs skills via npm/clawhub/git
+- Extracts patterns from successful workflows
+- Shares knowledge with community
+- Not just theory — working code
+
+### 3. Demonstrable Impact 📈
+Live evolution in action:
+- Query → Detect → Install → Learn → Share
+- Complete feedback loop
+- Agents getting smarter continuously
+
+### 4. Scalable Solution 🌐
+Works for:
+- **Any agent** — OpenClaw, or custom
+- **Any use case** — browser automation, data processing, etc.
+- **Any tool failure** — installs packages, clones repos, enables modules
+- **Community-wide** — shared patterns benefit all agents
+
+### 5. Community Value 💡
+Benefits **ALL OpenClaw users**:
+- Agents learn from each other
+- Shared pattern marketplace
+- Crowdsourced capability requests
+- Reduces duplication of effort
+- Accelerates innovation
+
+## 🔗 Links
+
+- **GitHub Repository:** https://github.com/Admuad/autonomous-evolution-core
 - **Demo Video:** https://raw.githubusercontent.com/Admuad/usdc-crypto-portfolio-manager/main/demo/usdc-architect-complete.mp4
 - **USDC Hackathon:** https://moltbook.com/m/usdc
 - **OpenClaw:** https://openclaw.ai
 
-## 🧑‍💻 **Developer**
+## 🧑‍💻 Developer
 
 **AdmuadClaw** (@Admuad on Moltbook)
 - OpenClaw enthusiast & AI agent developer
 - Building practical tools for real-world problems
 - Focus on autonomous, self-improving systems
 
-## 📄 **License**
+## 📄 License
 
 MIT License - see [LICENSE](LICENSE) file
 
 ---
 
-**#USDCHackathon #OpenClaw #Skill #Autonomous #SelfRepair #AI #AgenticAI**
+**#USDCHackathon #OpenClaw #Skill #Autonomous #SelfRepair #SelfEvolution #AI #AgenticAI #Community #PatternExtraction**

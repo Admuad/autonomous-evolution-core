@@ -1,0 +1,412 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2026-02-06T16:16:00Z",
+  "categories": {
+    "browser": {
+      "description": "Web browsing and automation capabilities",
+      "capabilities": [
+        {
+          "id": "web-screenshot",
+          "name": "Web Screenshot Capture",
+          "description": "Capture screenshots of web pages",
+          "implementation": {
+            "type": "skill",
+            "source": "clawhub",
+            "package": "web-screenshot-capture",
+            "installCommand": "clawhub install web-screenshot-capture"
+          },
+          "dependencies": ["puppeteer", "playwright"],
+          "detectPatterns": [
+            "take.*screenshot",
+            "capture.*page.*image",
+            "screenshot.*website"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "web-form-filling",
+          "name": "Web Form Automation",
+          "description": "Automatically fill and submit web forms",
+          "implementation": {
+            "type": "skill",
+            "source": "git",
+            "repo": "https://github.com/Admuad/web-form-automation",
+            "installCommand": "git clone https://github.com/Admuad/web-form-automation"
+          },
+          "dependencies": ["puppeteer"],
+          "detectPatterns": [
+            "fill.*form",
+            "submit.*form",
+            "automate.*form"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "web-scraping-advanced",
+          "name": "Advanced Web Scraping",
+          "description": "Extract structured data from complex websites",
+          "implementation": {
+            "type": "skill",
+            "source": "clawhub",
+            "package": "advanced-scraper",
+            "installCommand": "clawhub install advanced-scraper"
+          },
+          "dependencies": ["cheerio", "axios"],
+          "detectPatterns": [
+            "scrape.*data",
+            "extract.*information",
+            "crawl.*website"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    "files": {
+      "description": "File system operations and management",
+      "capabilities": [
+        {
+          "id": "file-encryption",
+          "name": "File Encryption/Decryption",
+          "description": "Encrypt and decrypt files automatically",
+          "implementation": {
+            "type": "npm",
+            "package": "file-crypto",
+            "installCommand": "npm install file-crypto"
+          },
+          "dependencies": ["crypto"],
+          "detectPatterns": [
+            "encrypt.*file",
+            "decrypt.*file",
+            "secure.*file"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "file-sync",
+          "name": "File Synchronization",
+          "description": "Sync files between locations or cloud services",
+          "implementation": {
+            "type": "skill",
+            "source": "git",
+            "repo": "https://github.com/Admuad/file-sync-skill",
+            "installCommand": "git clone https://github.com/Admuad/file-sync-skill"
+          },
+          "dependencies": ["rsync", "aws-sdk"],
+          "detectPatterns": [
+            "sync.*files",
+            "backup.*files",
+            "upload.*to.*cloud"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "batch-operations",
+          "name": "Batch File Operations",
+          "description": "Perform operations on multiple files efficiently",
+          "implementation": {
+            "type": "builtin",
+            "codeTemplate": "modules/batch-operations.js"
+          },
+          "dependencies": [],
+          "detectPatterns": [
+            "process.*all.*files",
+            "batch.*process",
+            "multiple.*files"
+          ],
+          "priority": "low"
+        }
+      ]
+    },
+    "databases": {
+      "description": "Database interaction and management",
+      "capabilities": [
+        {
+          "id": "postgres-connector",
+          "name": "PostgreSQL Database",
+          "description": "Connect and query PostgreSQL databases",
+          "implementation": {
+            "type": "npm",
+            "package": "pg",
+            "installCommand": "npm install pg"
+          },
+          "dependencies": ["pg"],
+          "detectPatterns": [
+            "postgres.*database",
+            "postgresql.*query",
+            "connect.*postgres"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "mongodb-connector",
+          "name": "MongoDB Database",
+          "description": "Connect and query MongoDB databases",
+          "implementation": {
+            "type": "npm",
+            "package": "mongodb",
+            "installCommand": "npm install mongodb"
+          },
+          "dependencies": ["mongodb"],
+          "detectPatterns": [
+            "mongodb.*database",
+            "mongo.*query",
+            "connect.*mongodb"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "redis-connector",
+          "name": "Redis Cache",
+          "description": "Connect and use Redis for caching",
+          "implementation": {
+            "type": "npm",
+            "package": "redis",
+            "installCommand": "npm install redis"
+          },
+          "dependencies": ["redis"],
+          "detectPatterns": [
+            "redis.*cache",
+            "use.*redis",
+            "connect.*redis"
+          ],
+          "priority": "medium"
+        }
+      ]
+    },
+    "testing": {
+      "description": "Automated testing and quality assurance",
+      "capabilities": [
+        {
+          "id": "api-testing",
+          "name": "API Testing",
+          "description": "Test REST APIs automatically",
+          "implementation": {
+            "type": "npm",
+            "package": "supertest",
+            "installCommand": "npm install supertest"
+          },
+          "dependencies": ["supertest", "express"],
+          "detectPatterns": [
+            "test.*api",
+            "api.*testing",
+            "endpoint.*test"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "e2e-testing",
+          "name": "End-to-End Testing",
+          "description": "Full application flow testing",
+          "implementation": {
+            "type": "skill",
+            "source": "git",
+            "repo": "https://github.com/Admuad/e2e-tester",
+            "installCommand": "git clone https://github.com/Admuad/e2e-tester"
+          },
+          "dependencies": ["cypress", "playwright"],
+          "detectPatterns": [
+            "e2e.*test",
+            "end.*to.*end.*test",
+            "integration.*test"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    "content": {
+      "description": "Content creation and manipulation",
+      "capabilities": [
+        {
+          "id": "image-processing",
+          "name": "Image Processing",
+          "description": "Process, resize, and manipulate images",
+          "implementation": {
+            "type": "npm",
+            "package": "sharp",
+            "installCommand": "npm install sharp"
+          },
+          "dependencies": ["sharp"],
+          "detectPatterns": [
+            "resize.*image",
+            "crop.*image",
+            "process.*image"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "pdf-generation",
+          "name": "PDF Generation",
+          "description": "Generate PDF documents from data",
+          "implementation": {
+            "type": "npm",
+            "package": "pdfkit",
+            "installCommand": "npm install pdfkit"
+          },
+          "dependencies": ["pdfkit"],
+          "detectPatterns": [
+            "generate.*pdf",
+            "create.*pdf",
+            "pdf.*document"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "video-editing",
+          "name": "Video Editing",
+          "description": "Edit and process video files",
+          "implementation": {
+            "type": "skill",
+            "source": "git",
+            "repo": "https://github.com/Admuad/video-editor-skill",
+            "installCommand": "git clone https://github.com/Admuad/video-editor-skill"
+          },
+          "dependencies": ["ffmpeg"],
+          "detectPatterns": [
+            "edit.*video",
+            "cut.*video",
+            "trim.*video"
+          ],
+          "priority": "low"
+        }
+      ]
+    },
+    "social": {
+      "description": "Social media and communication",
+      "capabilities": [
+        {
+          "id": "twitter-bot",
+          "name": "Twitter Automation",
+          "description": "Automate Twitter interactions and posts",
+          "implementation": {
+            "type": "npm",
+            "package": "twitter-api-v2",
+            "installCommand": "npm install twitter-api-v2"
+          },
+          "dependencies": ["twitter-api-v2"],
+          "detectPatterns": [
+            "post.*tweet",
+            "twitter.*bot",
+            "automate.*twitter"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "slack-bot",
+          "name": "Slack Integration",
+          "description": "Interact with Slack workspaces",
+          "implementation": {
+            "type": "npm",
+            "package": "@slack/web-api",
+            "installCommand": "npm install @slack/web-api"
+          },
+          "dependencies": ["@slack/web-api"],
+          "detectPatterns": [
+            "send.*slack.*message",
+            "slack.*notification",
+            "post.*to.*slack"
+          ],
+          "priority": "high"
+        }
+      ]
+    },
+    "research": {
+      "description": "Research and data analysis",
+      "capabilities": [
+        {
+          "id": "data-visualization",
+          "name": "Data Visualization",
+          "description": "Create charts and graphs from data",
+          "implementation": {
+            "type": "npm",
+            "package": "chart.js",
+            "installCommand": "npm install chart.js"
+          },
+          "dependencies": ["chart.js"],
+          "detectPatterns": [
+            "create.*chart",
+            "visualize.*data",
+            "generate.*graph"
+          ],
+          "priority": "medium"
+        },
+        {
+          "id": "sentiment-analysis",
+          "name": "Sentiment Analysis",
+          "description": "Analyze text sentiment",
+          "implementation": {
+            "type": "npm",
+            "package": "sentiment",
+            "installCommand": "npm install sentiment"
+          },
+          "dependencies": ["sentiment"],
+          "detectPatterns": [
+            "analyze.*sentiment",
+            "check.*mood",
+            "sentiment.*analysis"
+          ],
+          "priority": "medium"
+        }
+      ]
+    },
+    "voice-video": {
+      "description": "Voice and video processing",
+      "capabilities": [
+        {
+          "id": "text-to-speech",
+          "name": "Text to Speech",
+          "description": "Convert text to speech",
+          "implementation": {
+            "type": "skill",
+            "source": "clawhub",
+            "package": "tts-generator",
+            "installCommand": "clawhub install tts-generator"
+          },
+          "dependencies": ["say", "gtts"],
+          "detectPatterns": [
+            "speak.*text",
+            "text.*to.*speech",
+            "audio.*generation"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "speech-to-text",
+          "name": "Speech to Text",
+          "description": "Convert speech to text",
+          "implementation": {
+            "type": "npm",
+            "package": "speech-to-text",
+            "installCommand": "npm install speech-to-text"
+          },
+          "dependencies": ["speech-to-text"],
+          "detectPatterns": [
+            "transcribe.*audio",
+            "convert.*speech.*to.*text",
+            "speech.*recognition"
+          ],
+          "priority": "high"
+        },
+        {
+          "id": "video-transcription",
+          "name": "Video Transcription",
+          "description": "Extract and transcribe audio from videos",
+          "implementation": {
+            "type": "skill",
+            "source": "git",
+            "repo": "https://github.com/Admuad/video-transcriber",
+            "installCommand": "git clone https://github.com/Admuad/video-transcriber"
+          },
+          "dependencies": ["ffmpeg", "whisper"],
+          "detectPatterns": [
+            "transcribe.*video",
+            "extract.*audio.*from.*video",
+            "video.*to.*text"
+          ],
+          "priority": "medium"
+        }
+      ]
+    }
+  },
+  "installedCapabilities": [],
+  "failedInstallations": []
+}
